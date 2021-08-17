@@ -18,6 +18,7 @@
     "cross-env": "^7.0.3",
     "mocha": "^8.3.2",
     "regenerator-runtime": "^0.13.9",
+    "sinon": "^11.1.2",
     "supertest": "^6.1.5"
   },
   "dependencies": {
