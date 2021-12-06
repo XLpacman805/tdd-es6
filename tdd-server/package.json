@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cross-env NODE_ENV=test mocha src \"src/**/*.test.js\" --recursive --require @babel/register --file src/mocha-setup.js"
+    "test": "cross-env NODE_ENV=test mocha src \"src/**/*.test.js\" --recursive --require @babel/register --file src/mocha-setup.js",
+    "test:watch": "cross-env NODE_ENV=test mocha src \"src/**/*.test.js\" --recursive --require @babel/register --file src/mocha-setup.js --watch",
+    "coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text npm run test"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +19,7 @@
     "chai-exclude": "^2.0.3",
     "cross-env": "^7.0.3",
     "mocha": "^8.3.2",
+    "nyc": "^15.1.0",
     "regenerator-runtime": "^0.13.9",
     "sinon": "^11.1.2",
     "supertest": "^6.1.5"
